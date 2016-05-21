@@ -51,8 +51,7 @@ def near_hundred(n):
 def pos_neg(a, b, negative):
   if(negative):
     return a<0 and b<0
-  else:
-    return (a*b<0)  #product of neg & pos is neg
+  return (a*b<0)  #product of neg & pos is neg
 
 
 #not_string
@@ -73,9 +72,8 @@ def missing_char(str, n):
 def front_back(str):
   n = len(str)
   if(n>1):
-    return str[n-1]+str[1:len(str)-1]+str[0]
-  else:
-    return str
+    return str[n-1]+str[1:n-1]+str[0]
+  return str
 
 #front3
 #Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front
