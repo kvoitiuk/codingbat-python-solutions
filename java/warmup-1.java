@@ -126,7 +126,6 @@ public String front22(String str) {
 }
 
 
-
 // startHi
 // Given a string, return true if the string starts with "hi" and false otherwise.
 public boolean startHi(String str) {
@@ -257,7 +256,6 @@ public String endUp(String str) {
   if(length<=3) return str.toUpperCase();
   return str.substring(0,length-3) + (str.substring(length-3)).toUpperCase();
 }
-
 
 
 // everyNth
