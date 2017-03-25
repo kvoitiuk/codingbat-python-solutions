@@ -42,8 +42,7 @@ def rotate_left3(nums):
 #reverse3
 #Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
 def reverse3(nums):
-  nums[0], nums[2] = nums[2], nums[0]
-  return nums
+  return [nums[2], nums[1], nums[0]]
 
 #max_end3
 #Given an array of ints length 3, figure out which is larger between the first and last elements in the array, and set all the
@@ -57,12 +56,10 @@ def max_end3(nums):
 #Given an array of ints, return the sum of the first 2 elements in the array. If the array length is less than 2, just sum up
 #the elements that exist, returning 0 if the array is length 0.
 def sum2(nums):
-  length = len(nums)
-  if(length>=2):
-    return nums[0] + nums[1]
-  elif(length >=1):
-    return nums[0]
-  return 0  
+  result = 0
+  for index in range(min(2, len(nums))):
+    result += nums[index]
+  return result
 
 
 #middle_way
